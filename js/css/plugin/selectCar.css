@@ -1,0 +1,60 @@
+.sc-parent { float: left; font-size: 12px; }
+.sc-choice { float: left; margin: 0px; border: 1px solid #E5e5e5; position: relative; }
+    .sc-choice .on-off { background-color: #ccc; clear: right; }
+.sc-choicetitle { margin-top: 1px; float: left; font-size: 12px; line-height: 22px; text-align: right; vertical-align: middle; font-weight: bolder; }
+    .sc-choicetitle font { font-weight: normal; }
+.sc-choicediv { overflow: hidden; display: block; line-height: 20px; white-space: nowrap; }
+.sc-popdiv { overflow: hidden; margin: 0px; padding: 0px; border: 1px solid #E5e5e5;  }
+.sc-popdiv:after{content: ""; display: block; clear: both; height: 0;}
+
+.sc-checkitem { float: left; border-top: 1px solid #E5e5e5; border-top: none; }
+/*.sc-checkitem:last-child {  border-top: 1px solid red; }*/
+.sc-title {}
+    .sc-title div { margin-top: 5px; text-align: center; font-size: 12px; }
+    .sc-title strong { font-weight: bold; }
+.sc-context {overflow-y:auto; }
+
+    .sc-context .sc-optionsdiv {  margin-top: 1px; }
+    .sc-context .sc-more { cursor: pointer; width: 40px; margin-top: 1px; background-color: #CCC; color: blue; text-align: center; }
+.sc-optionsdiv select { vertical-align: middle; height: 22px; width: auto; }
+.sc-optionsdiv input { width: 100px; vertical-align: middle; }
+
+
+    .sc-optionsdiv .sc-searchdiv div { }
+    .sc-optionsdiv .sc-searchdiv input {  margin-top: 1px; }
+.sc-optionsdiv .sc-itmesdiv .sc-citem { margin: 0px; padding: 0px 4px 0px 2px; cursor: pointer; white-space: nowrap; }
+.sc-optionsdiv .sc-itmesdiv .sc-citemChk { background-color: #E5e5e5; color: #ff6a00; margin: 0px; padding: 0px 4px 0px 2px; }
+.sc-optionsdiv .sc-itmesdiv .sc-citem input { width: 10px; margin-left: 0px; }
+
+
+
+
+/*选中后样式*/
+.ccsel-item { float: left; vertical-align: middle; border: 1px solid #E5e5e5; white-space: nowrap; margin: 1px auto; margin: 1px 3px 1px 0px; clear: right; }
+    .ccsel-item:hover { color: #8c96a0; background-color: #e4e8ec; }
+    .ccsel-item .ccsel-t { float: left; padding-left: 3px; text-align: right; }
+    .ccsel-item .ccsel-c { float: left; color: #ef0a50; font-weight: bold; white-space: nowrap; overflow: hidden; }
+    .ccsel-item .ccsel-s { float: left; color: #ef0a50; font-weight: bolder; }
+    .ccsel-item .ccsel-a { margin: 0px 1px; float: left; cursor: pointer; }
+
+/*按钮及其悬停*/
+.sc-parent .sc-btn { cursor: pointer; border: 1px solid #dce1e6; padding: 3px 10px; color: #8c96a0; overflow: hidden; text-align: center; vertical-align: top; background-color: #E5e5e5; }
+    .sc-parent .sc-btn:hover { color: #fff; }
+.sc-optionsdiv .sc-searchdiv .sc-btn { margin: 1px 0px 1px 5px; }
+.sc-mulactdiv .sc-btn { float: left; margin-right: 3px; padding: 1px 5px; }
+.sc-parent .sc-more { padding: 2px 0px; }
+.sc-optionsdiv .sc-itmesdiv .sc-citem:hover { color: #ff6a00; background-color: #E5e5e5; padding: 0px 2px; margin: 0px 1px; }
+
+
+/*圆角背景处理及其悬停*/ /*text-shadow: 1px 1px 1px #8c96a0;*/
+.sc-parent .sc-btn { background: -moz-linear-gradient(center top, #E5e5e5, #e4e8ec) repeat scroll 0 0 rgba(0, 0, 0, 0); border-radius: 5px; color: #8c96a0; box-shadow: 0 1px 2px #E5e5e5 inset, 0 -1px 0 #E5e5e5 inset,0 -2px 3px #E5e5e5 inset; }
+    .sc-parent .sc-btn:hover { background: -moz-linear-gradient(center top, #e4e8ec, #AED0EA) repeat scroll 0 0 rgba(0, 0, 0, 0); border: 1px solid #E5e5e5; box-shadow: 0 1px 2px #AED0EA inset, 0 -1px 0 #AED0EA inset, 0 -2px 3px #AED0EA inset; }
+.sc-parent .sc-more { background: -moz-linear-gradient(center top, #E5e5e5, #e4e8ec) repeat scroll 0 0 rgba(0, 0, 0, 0); border-radius: 5px; color: #8c96a0; box-shadow: 0 1px 2px #E5e5e5 inset, 0 -1px 0 #E5e5e5 0 -2px 3px #E5e5e5 inset; }
+    .sc-parent .sc-more:hover { background: -moz-linear-gradient(center top, #e4e8ec, #AED0EA) repeat scroll 0 0 rgba(0, 0, 0, 0); }
+.sc-optionsdiv .sc-itmesdiv .sc-citem:hover { border-radius: 5px; }
+.ccsel-item { border-radius: 5px; }
+.sc-optionsdiv .sc-itmesdiv .sc-citemChk { border-radius: 5px; }
+    .sc-optionsdiv .sc-itmesdiv .sc-citemChk:hover { }
+.sc-optionsdiv .sc-searchdiv input { height: 18px; background: -moz-linear-gradient(center top, #fff, #fff) repeat scroll 0 0 rgba(0, 0, 0, 0); border-radius: 5px; color: #000; border: 1px solid #E5e5e5; vertical-align: middle; }
+    .sc-optionsdiv .sc-searchdiv input:hover { border: 1px solid #8c96a0; }
+.sc-optionsdiv .sc-searchdiv select { background: -moz-linear-gradient(center top, #fff, #fff) repeat scroll 0 0 rgba(0, 0, 0, 0); border-radius: 5px; color: #000; border: 1px solid #E5e5e5; }

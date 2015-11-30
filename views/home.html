@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <script src="/js/sea.js"></script>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" charset="utf-8">  
+    <link href="/css/font-awesome.min.css" rel="stylesheet" charset="utf-8">
+    <link href="/css/custom.css" rel="stylesheet" charset="utf-8">
+    <script src="/static/seaconfig.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-main" style="padding-left:0;">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><span>权限系统功能管理</span></li>
+                        <li><i class="icon-angle-right right"></i><b>管理系统首页</b></li>
+                    </ul>
+                </div>
+                <div class="MainWrap" ms-controller="functionmodel">
+                    <div class="permissionHome">
+                        <ul class="mTable">
+                            <li class="mTd"><a onclick ='AddNewTab("1","功能菜单维护","/function/list/3")' class="bg_blue" >功能菜单维护<i class="icon-arrow-right"></i></a></li>
+                            <li class="mTd"><a class="bg_orange" onclick ='AddNewTab("2","部门管理","/org/list")'>部门管理<i class="icon-arrow-right"></i></a></li>
+                            <li class="mTd"><a class="bg_green" onclick ='AddNewTab("3","用户管理","/user/list")'>用户管理<i class="icon-arrow-right"></i></a></li>
+                        </ul>
+                        <ul class="mTable">
+                            <li class="mTd"><a class="bg_pink" onclick ='AddNewTab("4","公司区域管理","/area/list")'>公司区域管理<i class="icon-arrow-right"></i></a></li>
+                            <li class="mTd"><a class="bg_blue_light" onclick ='AddNewTab("5","岗位管理","/job/list")'>岗位管理<i class="icon-arrow-right"></i></a></li>
+                        </ul>
+                        <ul class="mTable">
+                            <li class="mTd"><a class="bg_purple" onclick ='AddNewTab("6","公司架构调整","/org/change")'>公司架构调整<i class="icon-arrow-right"></i></a></li>
+                            <li class="mTd"><a class="bg_yellow" onclick ='AddNewTab("7","人员架构调整","/company/batch")'>人员架构调整<i class="icon-arrow-right"></i></a></li>
+                            <li class="mTd"><a class="bg_blue_dark inactive" href="javascript:;">自定义二<i class="icon-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+

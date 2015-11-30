@@ -1,0 +1,58 @@
+.cc-parent { float: left; font-size: 12px; }
+.cc-choice { float: left; margin: 0px; border: 1px solid #E5e5e5; position: relative; }
+    .cc-choice .on-off { background-color: #ccc; clear: right; }
+.cc-choicetitle { margin-top: 1px; float: left; font-size: 12px; line-height: 22px; text-align: right; vertical-align: middle; font-weight: bolder; }
+    .cc-choicetitle font { font-weight: normal; }
+.cc-choicediv { overflow: hidden; display: block; line-height: 20px; white-space: nowrap; }
+.cc-dropdiv { overflow: hidden; margin: 0px; padding: 0px; border: 1px solid #E5e5e5; border-top: 0px; }
+
+.cc-checkitem { width: 100%; border-top: 1px solid #E5e5e5; clear: both; display: block; }
+/*.cc-checkitem:last-child {  border-top: 1px solid red; }*/
+.cc-title { float: left; }
+    .cc-title div { margin-top: 5px; text-align: right; font-size: 12px; }
+    .cc-title strong { font-weight: bold; }
+.cc-context { float: left; }
+    .cc-context .cc-optionsdiv { float: left; margin-top: 1px; }
+    .cc-context .cc-more { cursor: pointer; width: 40px; margin-top: 1px; background-color: #CCC; color: blue; text-align: center; }
+.cc-optionsdiv select { vertical-align: middle; height: 22px; width: auto; }
+.cc-optionsdiv input { width: 100px; vertical-align: middle; }
+.cc-optionsdiv .cc-searchdiv { float: left; width: 100%; clear: both; white-space: nowrap; }
+
+    .cc-optionsdiv .cc-searchdiv div { float: left; }
+    .cc-optionsdiv .cc-searchdiv input { float: left; margin-top: 1px; }
+.cc-optionsdiv .cc-itmesdiv .cc-citem { float: left; margin: 0px; padding: 0px 4px 0px 2px; cursor: pointer; white-space: nowrap; }
+.cc-optionsdiv .cc-itmesdiv .cc-citemChk { background-color: #E5e5e5; color: #ff6a00; margin: 0px; padding: 0px 4px 0px 2px; }
+.cc-optionsdiv .cc-itmesdiv .cc-citem input { width: 10px; margin-left: 0px; }
+
+
+.cc-mulactdiv { float: left; width: 100%; margin: 1px 0px; }
+
+/*选中后样式*/
+.ccsel-item { float: left; vertical-align: middle; border: 1px solid #E5e5e5; white-space: nowrap; margin: 1px auto; margin: 1px 3px 1px 0px; clear: right; }
+    .ccsel-item:hover { color: #8c96a0; background-color: #e4e8ec; }
+    .ccsel-item .ccsel-t { float: left; padding-left: 3px; text-align: right; }
+    .ccsel-item .ccsel-c { float: left; color: #ef0a50; font-weight: bold; white-space: nowrap; overflow: hidden; }
+    .ccsel-item .ccsel-s { float: left; color: #ef0a50; font-weight: bolder; }
+    .ccsel-item .ccsel-a { margin: 0px 1px; float: left; cursor: pointer; }
+
+/*按钮及其悬停*/
+.cc-parent .cc-btn { cursor: pointer; border: 1px solid #dce1e6; padding: 3px 10px; color: #8c96a0; overflow: hidden; text-align: center; vertical-align: top; background-color: #E5e5e5; }
+    .cc-parent .cc-btn:hover { color: #fff; }
+.cc-optionsdiv .cc-searchdiv .cc-btn { margin: 1px 0px 1px 5px; }
+.cc-mulactdiv .cc-btn { float: left; margin-right: 3px; padding: 1px 5px; }
+.cc-parent .cc-more { padding: 2px 0px; }
+.cc-optionsdiv .cc-itmesdiv .cc-citem:hover { color: #ff6a00; background-color: #E5e5e5; padding: 0px 2px; margin: 0px 1px; }
+
+
+/*圆角背景处理及其悬停*/ /*text-shadow: 1px 1px 1px #8c96a0;*/
+.cc-parent .cc-btn { background: -moz-linear-gradient(center top, #E5e5e5, #e4e8ec) repeat scroll 0 0 rgba(0, 0, 0, 0); border-radius: 5px; color: #8c96a0; box-shadow: 0 1px 2px #E5e5e5 inset, 0 -1px 0 #E5e5e5 inset,0 -2px 3px #E5e5e5 inset; }
+    .cc-parent .cc-btn:hover { background: -moz-linear-gradient(center top, #e4e8ec, #AED0EA) repeat scroll 0 0 rgba(0, 0, 0, 0); border: 1px solid #E5e5e5; box-shadow: 0 1px 2px #AED0EA inset, 0 -1px 0 #AED0EA inset, 0 -2px 3px #AED0EA inset; }
+.cc-parent .cc-more { background: -moz-linear-gradient(center top, #E5e5e5, #e4e8ec) repeat scroll 0 0 rgba(0, 0, 0, 0); border-radius: 5px; color: #8c96a0; box-shadow: 0 1px 2px #E5e5e5 inset, 0 -1px 0 #E5e5e5 0 -2px 3px #E5e5e5 inset; }
+    .cc-parent .cc-more:hover { background: -moz-linear-gradient(center top, #e4e8ec, #AED0EA) repeat scroll 0 0 rgba(0, 0, 0, 0); }
+.cc-optionsdiv .cc-itmesdiv .cc-citem:hover { border-radius: 5px; }
+.ccsel-item { border-radius: 5px; }
+.cc-optionsdiv .cc-itmesdiv .cc-citemChk { border-radius: 5px; }
+    .cc-optionsdiv .cc-itmesdiv .cc-citemChk:hover { }
+.cc-optionsdiv .cc-searchdiv input { height: 18px; background: -moz-linear-gradient(center top, #fff, #fff) repeat scroll 0 0 rgba(0, 0, 0, 0); border-radius: 5px; color: #000; border: 1px solid #E5e5e5; vertical-align: middle; }
+    .cc-optionsdiv .cc-searchdiv input:hover { border: 1px solid #8c96a0; }
+.cc-optionsdiv .cc-searchdiv select { background: -moz-linear-gradient(center top, #fff, #fff) repeat scroll 0 0 rgba(0, 0, 0, 0); border-radius: 5px; color: #000; border: 1px solid #E5e5e5; }

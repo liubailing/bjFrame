@@ -1,0 +1,41 @@
+<div class="oni-doublelist oni-helper-reset oni-helper-clearfix oni-widget oni-helper-noselect"
+	 ms-visible="toggle">
+	<div class="oni-doublelist-data oni-doublelist-menu oni-widget-content" ms-widget="scrollbar,$left{{MS_OPTION_ID}}">
+		<ul class="oni-helper-reset oni-scrollbar-scroller" ms-each-item="data" data-each-rendered="updateScrollbar">
+		{{MS_OPTION_DATA}}
+		</ul>
+	</div>
+	<div class="oni-doublelist-option">
+		<div class="oni-dbl-button" ms-click="_updateAll($event,'add')">
+			<span>&nbsp;全部添加&nbsp;<i class="oni-icon">&#xf101;</i></span>
+		</div>
+		<div class="oni-dbl-button" ms-click="_update($event,'add')" 
+			ms-class-101="oni-state-disabled:dataTmpSelect.size()==0">
+			<span>&nbsp;转移&nbsp;<i class="oni-icon">&#xf105;</i></span>
+		</div>
+		<div class="oni-dbl-button" ms-click="_update($event,'delete')" 
+			ms-class-101="oni-state-disabled:selectTmpSelect.size()==0">
+			<span><i class="oni-icon">&#xf104;</i>&nbsp;撤销&nbsp;</span>
+		</div>
+		<div class="oni-dbl-button" ms-click="_updateAll($event,'delete')">
+			<span><i class="oni-icon">&#xf100;</i>&nbsp;全部删除&nbsp;</span>
+		</div>
+	</div>
+	<div class="oni-doublelist-select oni-doublelist-menu oni-widget-content" ms-widget="scrollbar,$right{{MS_OPTION_ID}}">
+		<ul class="oni-helper-reset oni-scrollbar-scroller" ms-each-item="_selectData" data-each-rendered="updateScrollbar">
+			{{MS_OPTION_SELECT}}
+		</ul>
+	</div>
+</div>
+MS_OPTION_TEMPLATE
+<li class="oni-doublelist-item" ms-class="oni-state-disabled:_itemSelected(item,'{{MS_OPTION_TYPE}}')" 
+ms-data-value="item.value" 
+ms-data-name="item.name" 
+ms-hover="oni-state-hover" 
+ms-class-1="oni-state-active:_activeClass(item,'{{MS_OPTION_TYPE}}')" 
+ms-class-2="oni-helper-hidden:_itemShow(item,'{{MS_OPTION_TYPE}}')" 
+ms-click="_select($event, item,'{{MS_OPTION_TYPE}}')" 
+ms-dblclick="_select($event, item,'{{MS_OPTION_TYPE}}', 'dbclick')"  
+ms-attr-id="'{{MS_OPTION_TYPE}}'+item.value+$uid">
+	{{ item.name | html }}
+</li>

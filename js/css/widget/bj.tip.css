@@ -1,0 +1,19 @@
+.bj_mask{position:fixed;z-index:90;width:100%;height:100%;left:0;top:0;background-color:#000;opacity:0.6;}
+.bj_tip{position:fixed;z-index:100;border:1px solid #000;background-color: #fff}
+
+.bj_tip .bj_tip_title{width: 100%;text-align: center;}
+.bj_tip .bj_tip_close{position:absolute;right:0;top:0; font-size: 20px; width: 1em; line-height: 1em; cursor: pointer; color: #ccc;}
+.bj_tip .bj_tip_close:hover{color: #555;}
+.bj_tip .bj_tip_content{width: 100%; text-align: center; padding: 30px 15px 15px;}
+.bj_tip .bj_tip_fooder{text-align: center; padding: 5px 15px 20px;}
+.bj_tip .bj_tip_fooder .bj_tip_cancle{display: inline-block; width: 80px; height: 2em; line-height: 2em; background: #eee; border-radius: 3px; cursor: pointer;
+border: 1px solid #888;color: #000000;background: #F3F3F3;background: -moz-linear-gradient(top,#ffffff 0%,#ebebeb 90%,#F3F3F3 100%);background: -webkit-linear-gradient(top,#ffffff 0%,#ebebeb 90%,#F3F3F3 100%);background: -o-linear-gradient(top,#ffffff 0%,#ebebeb 90%,#F3F3F3 100%);background: -ms-linear-gradient(top,#ffffff 0%,#ebebeb 90%,#F3F3F3 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',endColorstr='#d7d7d7',GradientType=0 );background: linear-gradient(top,#ffffff 0%,#ebebeb 90%,#F3F3F3 100%);}
+.bj_tip .bj_tip_fooder .bj_tip_cancle:active{background: #ebebeb; background: -moz-linear-gradient(top,#F3F3F3 0%,#ebebeb 10%,#ffffff 100%);background: -webkit-linear-gradient(top,#F3F3F3 0%,#ebebeb 10%,#ffffff 100%);background: -o-linear-gradient(top,#F3F3F3 0%,#ebebeb 10%,#ffffff 100%);background: -ms-linear-gradient(top,#F3F3F3 0%,#ebebeb 10%,#ffffff 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7',endColorstr='#ffffff',GradientType=0 );background: linear-gradient(top,#F3F3F3 0%,#ebebeb 10%,#ffffff 100%);}
+.inputfield {position:relative;}
+.bj_verify {position:absolute; color: #fff;}
+.bj_tip.bj_verify .bj_tip_content{width: 100%; text-align: center; padding: 1px 5px; text-align: left; font-size: 12px;}
+.bj_verify_reset {border:1px solid #f8cb00;background-color: #f8cb00;}
+.bj_verify_error {border:1px solid #fc4242;background-color: #fc4242;}
+.bj_verify_succ{border:1px solid #4dbd74;background-color: #4dbd74;}
+.verify_success {border:1px solid #fc4242}
+.verify_error {border:1px solid #4dbd74;}

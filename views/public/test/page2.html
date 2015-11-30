@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="/js/sea.js"></script>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" charset="utf-8">
+    <link href="/css/font-awesome.min.css" rel="stylesheet" charset="utf-8">
+    <link href="/css/custom.css" rel="stylesheet" charset="utf-8">
+    <script src="/static/seaconfig.js"></script>
+  
+</head>
+
+<body>
+    <div class="container">
+    <!--<div ms-controller="indexList">
+            <div class="main_contant_sgreea">
+                <div ms-widget="smartgrid,sg2,sgOpts2"></div>
+            </div>
+        </div> -->  
+        <div class="row">
+            <div class="col-main tabPage">      
+                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2><i class="icon-tasks"></i>用户列表</h2>
+                        </div>
+                        <div >
+                            <div ms-controller="indexList">
+                                <button ms-click="reRenderData">重新渲染数据</button>
+                                <button ms-click="clearData">清空数据</button>
+                                <button ms-click="getSR">获取sg数据</button>
+                                <div class="main_contant_sgreea">
+                                    <div ms-widget="smartgrid,sg2,sgOpts2"></div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script type="text/javascript">
+    seajs.use("/static/public/src/test/pagelist2");
+    </script>
+</body>
+
+</html>

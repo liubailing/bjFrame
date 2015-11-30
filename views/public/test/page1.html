@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon"> 
+    <script src="/js/sea.js"></script>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" charset="utf-8">  
+    <link href="/css/font-awesome.min.css" rel="stylesheet" charset="utf-8">
+    <link href="/css/custom.css" rel="stylesheet" charset="utf-8">
+    <script src="/static/seaconfig.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-main tabPage">
+                <div class="query-wrap" ms-controller="query_area">
+                    <div class="panel panel-default">
+                        <div class="panel-body no-padding">
+                            <form ms-widget="validation">
+                                <div class="query-items clearfix">
+                                    <div class="query-item">
+                                        <div class="query-label">用户姓名：</div>
+                                        <div class="query-value">
+                                            <div class="inputfield">
+                                                <input id="username" ms-duplex-norequired="username" type="text" class="form-control input-sm" placeholder="" value="" maxlength="8">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="query-item">
+                                        <div class="query-label">登录名：</div>
+                                        <div class="query-value">
+                                            <div class="inputfield">
+                                                <input id="loginname" ms-duplex-norequired="loginname" type="text" class="form-control input-sm" placeholder="" value="" maxlength="16">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="query-item">
+                                        <div class="query-label">用户邮箱：</div>
+                                        <div class="query-value">
+                                            <div class="inputfield">
+                                                <input id="useremail" ms-duplex-norequired-email="useremail" type="text" class="form-control input-sm" placeholder="" value="" maxlength="16">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="query-item">
+                                        <div class="query-label">联系电话：</div>
+                                        <div class="query-value">
+                                            <div class="inputfield">
+                                                <input id="userphone" ms-duplex-norequired-phone="userphone" type="text" class="form-control input-sm" placeholder="" value="" maxlength="16">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="query-item">
+                                        <div class="query-label">所属部门：</div>
+                                        <div class="query-value">
+                                            <select ms-duplex="department" ms-widget="dropdown,$1,$departments"></select>
+                                        </div>
+                                    </div>
+                                    <div class="query-item">
+                                        <div class="query-label">岗位名称：</div>
+                                        <div class="query-value">
+                                            <select ms-duplex="job" ms-widget="dropdown,$2,$jobopts"></select>
+                                        </div>
+                                    </div>
+                                    <div class="query-item">
+                                        <div class="query-label">用户角色：</div>
+                                        <div class="query-value">
+                                            <select ms-duplex="role" ms-widget="dropdown,$3,$roleopts"></select>
+                                        </div>
+                                    </div>
+                                    <div class="query-item">
+                                        <div class="query-label">用户状态：</div>
+                                        <div class="query-value">
+                                            <select ms-duplex="status" ms-widget="dropdown,$4,$statusopts"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btns center">
+                                    <button type="submit" class="btn btn-success btn-sm long">查询</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- 隔离线 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2><i class="icon-tasks"></i>用户列表</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <div class="control-part row">
+                                    <div class="pull-left">
+                                     <a href="/views/public/test/page6.html" class="btn btn-info btn-sm">新增（原）</a>     
+                                    </div>
+                                    <div class="pull-left">&nbsp;&nbsp;&nbsp;</div>
+                                    <div class="pull-left">
+                                      <a onclick = 'javascript:AddNewTab("1","新增渠道","/group/user/add.html")' class="btn btn-info btn-sm">新增内链</a>
+                                    </div>
+                                    <div class="pull-left">&nbsp;&nbsp;&nbsp;</div>
+                                     <div class="pull-left">
+                                      <a onclick = 'javascript:AddNewTab("2","宝驾官网","http://www.baojia.com")' class="btn btn-info btn-sm">新增外链</a>
+                                    </div>
+                                </div>
+                                <div ms-controller="userlist">
+                                    <div ms-widget="smartgrid,sg1,opts"></div>
+                                    <button ms-click="reRenderData">重新渲染数据</button>
+                                    <button ms-click="clearData">清空数据</button>
+                                    <button ms-click="getSR">获取sg数据</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 隔离线 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    seajs.use("/static/public/src/test/pagelist");
+    </script>
+</body>
+
+</html>

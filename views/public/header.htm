@@ -1,0 +1,66 @@
+<div class="Header ms-controller" ms-controller="header">
+    <div class="Logo">
+        <a class="logoLink" href="">宝驾 ICSS</a>
+    </div>
+    <div class="headBar">
+        <div class="headRight">
+            <div class="link droplink">
+                <span class="dropTit">
+                    <i class="icon-user"></i>
+                    <span class="userName">{{username}}</span>
+                    <span class="caretDown"></span>
+                </span>
+                <div class="dropList">
+                    <ul>
+                        <li ms-repeat-el="headLinksData"><a ms-click='headlinkClick(el.id, el.name, el.url)'>{{el.name}}</a></li>
+                        <li><a ms-click="logout()">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link droplink roleOpt secdrop">
+                <span class="dropTit">
+                    <i class="icon-retweet"></i>
+                    <span class="userName">{{currentRole}}</span>
+                    <span class="caretDown"></span>
+                </span>
+                <div class="dropList">
+                    <ul>
+                        <li ms-repeat-el="headRolesData"><a ms-href="el.url">{{el.name}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="link">
+                <a href=""><i class="sico sico_paper"></i></a>
+            </div> -->
+            <div class="link">
+                <a href=""><i class="sico sico_help"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var headLinksData=[
+        {id:9991,name:"设置", url:"/pages/add.html"},
+        {id:9992,name:"其它", url:"/pages/add.html"}
+    ]
+    var headRolesData=[
+        {id:8881,name:"某某角色1", url:"http://www.baojia.com"},
+        {id:8882,name:"某某角色2", url:"/views/index.html?role2"},
+        {id:8883,name:"某某角色3", url:"/views/index.html?role3"}
+    ]
+    var headermodel = avalon.define({
+        $id: 'header',
+        username: '安妮宝贝',
+        headLinksData:headLinksData,
+        headlinkClick: function (id, name, url) {
+            openTab(id,name,url,true);
+        },
+        logout: function () {
+            alert("退出啦！")
+        },
+        currentRole: "某某角色1",
+        headRolesData: headRolesData
+    });
+    avalon.scan(document.body, headermodel);
+</script>

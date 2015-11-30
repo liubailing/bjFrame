@@ -1,0 +1,19 @@
+<div class="droptree" ms-mouseleave="_listleave" id="MS_DROPTREE_DIV_ID">
+    <div class="droptree-div" title="" ms-click="_toggle1">
+    	<span class="placeholder" ms-visible="!selNodes.length">-- 请选择 --</span>
+        <div ms-repeat="selNodes">{{el.name}}<span class="delete-act oni-icon" ms-attr-chkid="el.id" ms-click="_delNode" ms-click-1="$remove">&#xf057</span></div>
+     </div> 
+     <div>
+        <i class="droptree-act oni-icon" ms-visible="!showtoggle" ms-click="_toggle">&#xf107;</i>
+        <i class="droptree-act oni-icon" ms-visible="showtoggle" ms-click="_toggle">&#xf106;</i>
+    </div> 
+    <div id= "MS_DROPTREE_TREE_ID" ms-visible="showtoggle" class="droptree-tree" ></div> 
+</div>
+MS_OPTION_TEMPLATE
+<div class="droptree" ms-mouseleave="_listleave" id="MS_DROPTREE_DIV_ID">
+    <div class="droptree-div" title="">
+    	<span class="placeholder" ms-visible="!selNodes.length">-- 请选择 --</span>
+        <div ms-repeat="selNodes">{{el.name}}<span class="delete-act oni-icon" ms-attr-chkid="el.id" ms-click="_delNode" ms-click-1="$remove">&#xf057</span></div>
+    </div> 
+    <div id= "MS_DROPTREE_TREE_ID" ms-visible="showtoggle" class="droptree-tree show" ></div> 
+</div>
