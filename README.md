@@ -2,7 +2,7 @@
 宝驾2015前端   avalonjs、  seajs、 cmd ,古老、自搭建前后端
 
 
-#技术栈
+# 技术栈
 - avalonjs
 - seajs
 - jquery
